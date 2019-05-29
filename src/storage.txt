@@ -1,0 +1,41 @@
+<body onload = "initialize();"><div class = "header"><h1>student common market</h2></div>
+
+<div class = "bottom">
+    <ul>
+        <ol><button onclick = "cartToggle();">my cart</button></ol>
+        <ol><span id = "cart"></span></ol>
+    </ul>
+</div>
+
+<div class = "columncontainer">
+    <div class = "column">
+        <div class = "colcontent1">Lorem ipsum dolor sit amet, sed eu suas consequat. Erat aliquam reprehendunt ei pri, his legere corrumpit rationibus cu. Dicta novum lucilius usu et. Mundi reprehendunt vim ne, decore ponderum eos in. Malorum ornatus antiopam ad ius, vel meis luptatum te, in aeterno argumentum elaboraret vim. Ex propriae expetenda per, eu quem fugit quo.
+        </div>
+    </div>
+    <div class = "column">
+        <div class = "colcontent2">Lorem ipsum dolor sit amet, sed eu suas consequat. Erat aliquam reprehendunt ei pri, his legere corrumpit rationibus cu. Dicta novum lucilius usu et. Mundi reprehendunt vim ne, decore ponderum eos in. Malorum ornatus antiopam ad ius, vel meis luptatum te, in aeterno argumentum elaboraret vim. Ex propriae expetenda per, eu quem fugit quo.
+        </div>
+    </div>
+    <hr>
+    <div><table class = "similar">
+        <tr>
+            <th>Die 1</th>
+            <th>Die 2</th>
+            <th>Die 3</th>
+            <th>Die 3</th>
+        </tr>
+    </table>
+    </div>
+    <hr>
+    <div class = "reviews">Lorem ipsum dolor sit amet, sed eu suas consequat. Erat aliquam reprehendunt ei pri, his legere corrumpit rationibus cu. Dicta novum lucilius usu et. Mundi reprehendunt vim ne, decore ponderum eos in. Malorum ornatus antiopam ad ius, vel meis luptatum te, in aeterno argumentum elaboraret vim. Ex propriae expetenda per, eu quem fugit quo.</div>
+
+    <form method = "get" id = "text_form">
+        <div>
+
+            <input class = "reviews"type = "text" name = "author" />
+        </div>
+
+</div>
+
+<div class = "footer">insert text?</div>
+</body>
