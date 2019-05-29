@@ -1,104 +1,87 @@
-/*
-<script src = "______.js"></script>
-	(How you can refrence stuff written from a separate JS file.)
-<script>
-	(normal HTML code)
-</script>
-
-<script src = "js/____.js"></script> (JS file under the js child-folder.)
-<script src = "../js/___.js"></script> (".." = go up to parent file, then back to js folder with "js")
-
-javascript files contain ONLY JAVASCRIPT!
-*/
-
-function getRandomInteger(min, max)
-	{
-		return parseInt(Math.random()*(max - min + 1)) + min;
-	}
-
-/* function getRandomNumber (min, max)
-	{
-		numberOfOptions = max - min + 1;
-		parseInt(Math.random() * numberOfOptions) + min;
-	}
- */
-
-function getOrdinalSuffix(number)
-	{
-		var j = number % 10,
-			k = number % 100;
-		if (j == 1 && k!= 11)
-			return "st";
-		if (j == 2 && k!= 12)
-			return "nd";
-		if (j == 3 && k!= 13)
-			return "rd";
-		return "th";
-	}
-
-	/* 	function getOrdinalSuffix(number)
-		{
-		lastdigit = number.toString().split('').pop();
-		if(lastdigit == 1)
-			return "st";
-		else if(lastdigit == 2)
-			return "nd";
-		else if(lastdigit == 3)
-			return "rd";
-		else
-			return "th";
+body {
+		background-color:white;
+		height:100%;
+		padding-left:8%;
+		padding-right:8%;
+		padding-top:5%;
+		background-image: url("icecream.png");
+		font-size:18px;
 		}
-	*/
-function round(number, places)
-	{
-	  return Number(Math.round(number+'e'+places)+'e-'+places);
-	}
 
-function delayedText(msg, id, speed)
-{
-	var sentence = msg;
-	var letter = "";
-	var textSpeed = speed;
-	var nextLetter = 0;
-	var sentenceLength = 0;
-	var sentenceArray = [];
-	var timeRef = false;
+		.header {background-color:#595A6E;}
 
-	sentenceLength = sentence.length;
-	clearInterval(timeRef);
-	timeRef = setInterval (function()
-	{
-		if (sentenceArray.length < sentence.length)
-		{
-			letter = sentence.charAt(0 + nextLetter);
-			nextLetter++;
-			sentenceArray.push(letter);
-			var finalSentence = sentenceArray.join("");
-			document.getElementById(id).innerHTML = finalSentence;
+		.bottom {
+		background-color:#595A6E;
+		position:fixed;
+		top:0px;
+		right:0px;
+		width:100%;
+		text-align:right;
+		padding-left:4%;
+		padding-right:4%;
 		}
-	}
-		, speed);
-}
 
-function findObjectInArray(array, property, value)
-{
-    for (var i = 0; i < array.length; i++)
-	{
-        if (array[i][property] === value)
-			/* Triple equal sign for STRICT equality */
-			/* Apparently, Brackets are typically used for accessing properties of an Object too */
-            return array[i];
-	}
-}
+		h1 {text-align:center; color:white;}
 
-function randomizeArray(array)
-{
-	var newArray = [];
-	while (array.length > 0)
-	{
-		var placeHolder = getRandomInteger (0, array.length - 1);
-		newArray.push(array[placeHolder]);
-		array.splice(placeHolder,1);
-	}
-	return newArray;
-}
+		span {color:white;}
+
+		hr {width:75%;}
+
+		button {
+		background-color:transparent;
+		padding:5px 5px;
+		border:none;
+		color:white;
+		font-size:18px;
+		outline: 0;
+		}
+
+		button:hover {background-color: #555555;}
+
+		.columncontainer
+		{
+			display:block;
+			background-color:white;
+
+			margin-left:auto;
+			margin-right:auto;
+			padding-top:5%;
+			min-height:800px;
+		}
+		.column
+		{
+			display:inline-block;
+			width:40%;
+			vertical-align:top;
+			padding:2%;background-color:none;height:50%;
+		}
+		.colcontent1
+		{
+			display:block;
+			width:75%;
+			height:50:%;
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			padding: 10px 10px;
+		}
+		.colcontent2
+		{
+			display:block;
+			width:120%;
+			height:50:%;
+			margin-left:auto;
+			margin-right:auto;
+			padding: 10px 10px;
+		}
+		.similar, th, td
+		{
+			border-style:dotted;
+			text-align:center;
+		}
+		.similar, .reviews
+		{
+			display:block;;width:75%;height:50:%;padding: 10px 10px;margin-left:auto;
+			margin-right:auto;
+		}
+		.footer {text-align:center;padding: 10px 10px;background-color:#595A6E; width:100%;}
